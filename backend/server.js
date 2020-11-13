@@ -1,7 +1,7 @@
 
 import morgan from 'morgan'
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV === "development") {
   import dotenv from "dotenv";
   dotenv.config();
 }
