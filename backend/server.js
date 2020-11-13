@@ -1,10 +1,12 @@
+// import dotenv from "dotenv";
 
-import morgan from 'morgan'
 
-if (process.env.NODE_ENV === "development") {
-  import dotenv from "dotenv";
+if (process.env.NODE_ENV !== "production") {
+
   dotenv.config();
 }
+
+import morgan from 'morgan'
 import express from "express";
 import path from 'path'
 import connectDb from './config/db.js'
