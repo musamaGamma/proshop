@@ -1,0 +1,19 @@
+.productScreen strong {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.productScreen__price {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.productScreen__btn {
+  font-size: 1rem;
+ 
+}
+
+.productScreen__btn span {
+  margin-right: .5rem;
+  font-size: 1.3rem;
+}

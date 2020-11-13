@@ -1,0 +1,18 @@
+
+html {
+  font-size: 70%;
+}
+body {
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+.rating span {
+  margin: .25rem;
+}
