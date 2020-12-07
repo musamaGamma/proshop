@@ -1,10 +1,4 @@
-// import dotenv from "dotenv";
 
-
-if (process.env.NODE_ENV !== "production") {
-
-  dotenv.config();
-}
 
 import morgan from 'morgan'
 import express from "express";

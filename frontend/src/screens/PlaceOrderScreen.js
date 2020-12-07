@@ -37,7 +37,7 @@ const PlaceOrderScreen = ({history}) => {
   }, [success, history]);
 
   const placeOrderHandler = () => {
-
+console.log('payment mehtod', cart.paymentMethod)
     dispatch(createOrder({
         orderItems: cart.cartItems,
         shippingAddress: cart.shippingAddress,

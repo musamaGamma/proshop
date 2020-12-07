@@ -26,7 +26,7 @@ const CartScreen = ({ match, location, history }) => {
     if (cartItems && productId) {
       dispatch(addToCart(productId, qty));
     }
-  }, [dispatch, productId, qty, cartItems]);
+  }, [dispatch, productId]);
   const removeFromCartHandler = (id) => {
       dispatch(removeFromCart(id))
   };
@@ -39,7 +39,7 @@ const CartScreen = ({ match, location, history }) => {
     </span>
   );
   return (
-    <Row>
+    <Row style={{marginTop: '4rem'}}>
       <Col md={8}>
         {cartItems.length === 0 ? (
           <Message msg={msg} />

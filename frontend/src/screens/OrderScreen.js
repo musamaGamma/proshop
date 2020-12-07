@@ -82,7 +82,7 @@ dispatch(payOrder(orderId, paymentResult))
   return  loading? <Loader />: error? <Message variant="danger" msg={error} /> 
   : <>
   
-      <Row>
+      <Row style={{marginTop: "4rem"}}>
       <h1 class="mb-4">order {order._id}</h1>
         <Col md={8}>
           <ListGroup variant="flush" style={{ fontSize: "1.5rem" }}>
@@ -165,8 +165,9 @@ dispatch(payOrder(orderId, paymentResult))
               </ListGroup.Item>
              {!order.isPaid && (
                  <ListGroup.Item>
+                  
                      {loadingPay && <Loader />}
-                     {sdkReady? <Loader/> : (
+                     {!sdkReady? <Loader/> : (
                          <PayPalButton amount={order.totalPrice} onSuccess={successPaymentHandler} />
                      )}
                  </ListGroup.Item>
