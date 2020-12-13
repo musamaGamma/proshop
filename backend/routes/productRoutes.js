@@ -28,6 +28,7 @@ router.get(
   })
 );
 //GET the top rated products
+//route GET /api/products/top
 router.get("/top", asyncHandler(async (req, res)=> {
   const products = await Product.find({}).sort({rating: -1}).limit(3)
   res.json(products)
